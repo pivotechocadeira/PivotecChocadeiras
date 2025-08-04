@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pivotec Chocadeiras - Chocadeiras automáticas, acessórios e suporte para criadores. Qualidade e eficiência em incubação.">
+  <meta name="keywords" content="chocadeira, incubadora, ovos, criação, acessórios, Pivotec">
+  <title>Pivotec Chocadeiras - Qualidade em Incubação</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #333; }
+    header { background-color: #1e90ff; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo-container { display: flex; align-items: center; gap: 10px; }
+    .logo { height: 55px; width: auto; }
+    header h1 { margin: 0; font-size: 1.4rem; font-weight: 700; }
+    .banner { background: url('https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/file_00000000119861f9a0150a0930dab8b4.png') center/cover no-repeat; height: 250px; display: flex; justify-content: center; align-items: center; color: #fff; text-align: center; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
+    .banner h2 { font-size: 1.8rem; background: rgba(0,0,0,0.5); padding: 0.5rem 1rem; border-radius: 10px; }
+    .container { max-width: 1200px; margin: 2rem auto; padding: 1rem; }
+    h2 { text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #1e90ff; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
+    .product { background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); display: flex; flex-direction: column; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+    .product:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .product img { width: 100%; object-fit: cover; height: 180px; }
+    .product-content { padding: 1rem; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .product h3 { font-size: 1rem; margin: 0.5rem 0; color: #333; }
+    .price { color: #28a745; font-weight: bold; margin: 0.5rem 0; }
+    .btn-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .btn { flex: 1; background: #1e90ff; color: #fff; padding: 0.5rem; text-align: center; text-decoration: none; border-radius: 5px; font-size: 0.9rem; transition: background 0.3s; }
+    .btn:hover { background: #0d6efd; }
+    footer { background: #1e90ff; color: #fff; text-align: center; padding: 1.5rem; margin-top: 2rem; }
+    .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background-color: #25d366; color: #fff; border-radius: 50%; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 1000; display: flex; align-items: center; justify-content: center; }
+
+    /* Estilo do menu lateral */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #1e90ff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      z-index: 2000;
+    }
+    .sidebar a { padding: 8px 8px 8px 32px; text-decoration: none; font-size: 1.2rem; color: #fff; display: block; transition: 0.3s; }
+    .sidebar a:hover { background-color: rgba(255,255,255,0.1); }
+    .closebtn { position: absolute; top: 20px; right: 25px; font-size: 2rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <!-- Menu lateral -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="fecharMenu()">&times;</a>
+    <a href="#chocadeiras" onclick="fecharMenu()">Chocadeiras</a>
+    <a href="#acessorios" onclick="fecharMenu()">Acessórios</a>
+    <a href="#sobre" onclick="fecharMenu()">Sobre Nós</a>
+    <a href="https://wa.me/5592985894754" target="_blank" onclick="fecharMenu()">WhatsApp</a>
+  </div>
+
+  <header>
+    <div class="logo-container">
+      <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/dark_logo_transparent_background.png" alt="Logo Pivotec" class="logo">
+      <h1>Pivotec Chocadeiras</h1>
+    </div>
+    <div class="menu-toggle" onclick="abrirMenu()">&#9776;</div>
+  </header>
+
+  <section class="banner">
+    <h2>Eficiência e Qualidade em Incubação</h2>
+  </section>
+
+  <div class="container" id="chocadeiras">
+    <h2>Modelos de Chocadeiras</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/original_71913252-a711-4dfa-b11c-cffac931bb45_IMG_20210326_084004885.jpg" alt="Chocadeira Smart 120 WIFI">
+        <div class="product-content">
+          <h3>Chocadeira Smart 120 WIFI</h3>
+          <p class="price">R$ 600,00 + FRETE GRÁTIS</p>
+          <div class="btn-group">
+            <a class="btn" href="https://mpago.la/16EgeWQ" target="_blank">Comprar</a>
+            <a class="btn" href="produto-smart120.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/original_71913252-a711-4dfa-b11c-cffac931bb45_IMG_20210326_084004885.jpg" alt="Chocadeira Automática 120 Ovos">
+        <div class="product-content">
+          <h3>Chocadeira Automática 120 Ovos</h3>
+          <p class="price">R$ 540,00 + FRETE GRÁTIS</p>
+          <div class="btn-group">
+            <a class="btn" href="https://mpago.la/1PZvLg4" target="_blank">Comprar</a>
+            <a class="btn" href="produto-automatica120.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/Chocadeira-Smart-80(2).jpg" alt="Chocadeira Smart 80 Ovos">
+        <div class="product-content">
+          <h3>Chocadeira Smart 80 Ovos</h3>
+          <p class="price">R$ 400,00 + FRETE GRÁTIS</p>
+          <div class="btn-group">
+            <a class="btn" href="https://mpago.la/1n2r5cR" target="_blank">Comprar</a>
+            <a class="btn" href="produto-smart80.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/chocadeira-automatica-80(2).jpg" alt="Chocadeira Automática 80 Ovos">
+        <div class="product-content">
+          <h3>Chocadeira Automática 80 Ovos</h3>
+          <p class="price">R$ 350,00 + FRETE GRÁTIS</p>
+          <div class="btn-group">
+            <a class="btn" href="https://mpago.la/1KS7kRj" target="_blank">Comprar</a>
+            <a class="btn" href="produto-automatica80.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/IMG_20210523_170611636.jpg" alt="Chocadeira Manual 50 Ovos">
+        <div class="product-content">
+          <h3>Chocadeira Manual 50 Ovos</h3>
+          <p class="price">R$ 250,00 + FRETE GRÁTIS</p>
+          <div class="btn-group">
+            <a class="btn" href="https://mpago.la/2X2zPpE" target="_blank">Comprar</a>
+            <a class="btn" href="produto-manual50.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="acessorios">
+    <h2>Acessórios</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/download%20(1).jpeg" alt="Termômetro Digital">
+        <div class="product-content">
+          <h3>Termômetro Digital</h3>
+          <p class="price">R$ 30,00</p>
+          <div class="btn-group">
+            <a class="btn" href="#" target="_blank">Comprar</a>
+            <a class="btn" href="produto-termometro.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/acessorio2.jpg" alt="Bandeja de Ovos">
+        <div class="product-content">
+          <h3>Bandeja de Ovos</h3>
+          <p class="price">INDISPONIVEL NO MOMENTO</p>
+          <div class="btn-group">
+            <a class="btn" href="#" target="_blank">Comprar</a>
+            <a class="btn" href="produto-bandeja.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/51KUUsXo-GL._UF894%2C1000_QL80_.jpg" alt="Umidificador para Incubação">
+        <div class="product-content">
+          <h3>Umidificador para Incubação</h3>
+          <p class="price">R$ 150,00</p>
+          <div class="btn-group">
+            <a class="btn" href="#" target="_blank">Comprar</a>
+            <a class="btn" href="produto-umidificador.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/e5dae8bb1a.jpg" alt="Higrômetro Digital">
+        <div class="product-content">
+          <h3>Higrômetro Digital</h3>
+          <p class="price">R$ 50,00</p>
+          <div class="btn-group">
+            <a class="btn" href="#" target="_blank">Comprar</a>
+            <a class="btn" href="produto-higrometro.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://raw.githubusercontent.com/pivotechocadeira/Smart120/refs/heads/main/kit_resistencia_de_chocadeira_110v_ac_4_isoladores_roldanas_de_porcelana_conector_de_ceramica_3435_1_a2c6e546b935c33adbfb4726669e744c.jpg" alt="Resistência para Chocadeiras">
+        <div class="product-content">
+          <h3>Resistência para Chocadeiras</h3>
+          <p class="price">R$ 40,00</p>
+          <div class="btn-group">
+            <a class="btn" href="#" target="_blank">Comprar</a>
+            <a class="btn" href="produto-resistencia.html">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="sobre">
+    <h2>Sobre Nós</h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto;">
+      A Pivotec Chocadeiras é referência na fabricação de chocadeiras automáticas e acessórios. Nossa missão é fornecer produtos confiáveis, garantindo máxima eficiência e suporte ao cliente em todo o Brasil.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Pivotec Chocadeiras - Todos os direitos reservados</p>
+    <p>Contato: pivotec.am@gmail.com | (92) 98589-4754</p>
+    <p> MANAUS-AMAZONAS</p>
+  </footer>
+
+  <a href="https://wa.me/5592985894754?text=Olá!%20Tenho%20interesse%20em%20uma%20chocadeira." class="whatsapp-float" target="_blank">&#128222;</a>
+
+  <script>
+    function abrirMenu() { document.getElementById("sidebar").style.width = "250px"; }
+    function fecharMenu() { document.getElementById("sidebar").style.width = "0"; }
+  </script>
+</body>
+</html>
